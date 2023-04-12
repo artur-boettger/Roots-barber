@@ -1,7 +1,7 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    max-width: 1200px;
+    max-width: 100%;
     background-color: #0e0d13;
 }
 .logo {
@@ -14,6 +14,7 @@ header {
     color: #fff;
     padding: 20px 15%;
     display: flex;
+    max-width: 100%;
 }
 
 header ul {
@@ -40,15 +41,16 @@ header li a {
 }
 
 main {
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 13%;
     background-color: #0e0d13;
     
 }
 .barbeiros {
     display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 50px;
+    position: relative;
+    justify-content: end;
 }
 
 button {
@@ -66,16 +68,34 @@ button {
     align-items: center;
 }
 
-.local {
-	text-align: center;
-	padding: 40px 0;
+.horario {
+    padding-top: 50px;
     background-color: #0e0d13;
+    color: white;
+    display: flex;
+    column-gap: 40%;
+    font-size: 20px;
 }
-iframe {
-    width: 1200px;
-    height: 300px;
-    margin-left: 12px;
-    padding-left: 60px;
+
+.marcar-horario {
+    padding: 30px;
+}
+table {
+    margin-left: 12%;
+}
+td {
+    border: 1px solid white;
+    padding: 8px 15px;
+}
+
+
+label {
+    margin: 10px 30px 30px 40px;
+}
+.enviar {
+    cursor: pointer;
+   margin-left: 80%;
+
 }
 footer {
 	text-align: center;
@@ -89,11 +109,9 @@ footer {
 }
 /*RESPONSIVO*/
 @media (max-width: 500px){
-    header {
-        width: 100px;
-   }
+    
    header img {
-       padding-left: 25%;
+       padding-left: 12%;
    }
    header ul {
        display: block;
@@ -102,6 +120,9 @@ footer {
        font-size: 18px;  
        color: #0e0d13;
    }
+   header ul li {
+    padding-bottom: 5px;
+   }
   
    main {
        padding: 20px;
@@ -109,13 +130,25 @@ footer {
    .barbeiros {
     display: block;
    }
-   .img-eduardo, .img-matheus, .img-joabi{
-       width: 300px;
-   }
-   iframe {
-    width: 300px;
-    height: 300px;
-    margin-left: 12px;
-    padding 0;
-}
+   
+    .local{
+        height: 300px;
+    }
+    .horario {
+        display: block;
+        font-size: 13px;
+        padding-left: 10%;
+    }
+    table {
+        margin-left: 25%;
+    }
+    td {
+        border: 1px solid white;
+        padding: 8px 15px;
+    }
+    .enviar {
+        cursor: pointer;
+       margin-left: 40%;
+    
+    }
 }
