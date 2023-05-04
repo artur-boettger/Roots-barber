@@ -1,0 +1,63 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0e0d13;
+}
+
+header a {
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS PRODUTOS */
+
+main {
+    height: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.produtos {
+    margin: 0 auto;
+    padding: 50px 0;
+    color: white;
+    list-style: none;
+}
+
+div.box-produtos {
+    vertical-align: top;
+    height: 500px;
+    width: 300px;
+    border: 5px white solid;
+    border-radius: 20px;
+    margin: 1% 5%;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+}
+
+.box-produtos img {
+    height: 300px;
+}
+
+.box-produtos:hover {
+    border-color: orange;
+}
+
+@media (max-width: 600px) {
+    .produtos {
+        display: block;
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    .box-produtos {
+        width: 300px;
+    }
+
+}
