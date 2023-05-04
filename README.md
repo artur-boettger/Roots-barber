@@ -1,2 +1,1 @@
-# Roots-barber
-Interface web para barbearia.
+https://barbearia-roots.web.app/
