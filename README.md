@@ -1,4 +1,4 @@
-Site feito para barbearia Roots com aba Home, produtos, localização e responsivo com dispositivos móveis.
+# Site feito para Barbearia
 
 URL ↓
 
